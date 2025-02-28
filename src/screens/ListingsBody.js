@@ -4,8 +4,6 @@ import CountryInfo from './CountryInfo';
 
 export default function ListingsBody() {
   const [display, setDisplay] = useState('CountryList');
-  const [countryTipData, setCountryTipData] = useState([]);
-  const [countryCurrencyData, setCountryCurrencyData] = useState('');
   const [tipData, _setTipData] = useState([]);
   const tipDataRef = useRef(tipData);
   const setTipData = (newTipData) => {
@@ -18,6 +16,8 @@ export default function ListingsBody() {
     currencyDataRef.current = newCurrencyData;
     _setCurrencyData(newCurrencyData);
   };
+  const [countryTipData, setCountryTipData] = useState([]);
+  const [countryCurrencyData, setCountryCurrencyData] = useState('');
 
   useEffect(() => {
     // Get country tip data
