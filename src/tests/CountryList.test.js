@@ -8,7 +8,13 @@ it('renders CountryList component', async () => {
   const container = document.createElement('div');
   document.body.appendChild(container);
 
+  const tipDataRef = {
+    current: [],
+  };
+
   await act(async () => {
-    ReactDOM.createRoot(container).render(<CountryList />);
+    ReactDOM.createRoot(container).render(
+      <CountryList tipDataRef={tipDataRef} />
+    );
   });
 });
