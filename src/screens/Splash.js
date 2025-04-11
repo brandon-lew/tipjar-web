@@ -24,7 +24,7 @@ const splashBackground = {
 
 export default function Splash(props) {
   return (
-    <div className='splash fadeIn' style={splashBackground}>
+    <div className='splash' style={splashBackground}>
       <div className='overlay'>
         <div className='header'>
           <h1>TIP JAR</h1>
