@@ -1,3 +1,5 @@
+@use "sass:color"
+
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Hind:wght@300;600&display=swap')
 
 // VARIABLES
@@ -253,7 +255,7 @@ a,a:visited
     opacity: 1
 
 .shadow
-  box-shadow: 0px 0px 10px 0px lighten($colorDarkGrey, 50%)
+  box-shadow: 0px 0px 10px 0px color.adjust($colorDarkGrey, $lightness: 50%)
 @media(min-width:480px)
   .shadow
     box-shadow: none
