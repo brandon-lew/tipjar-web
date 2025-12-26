@@ -5,7 +5,7 @@
   "private": true,
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/blsnwbrdr/tipjar-web.git"
+    "url": "git+https://github.com/brandon-lew/tipjar-web.git"
   },
   "homepage": "http://brandonlew.com/portfolio/tipjar",
   "scripts": {
